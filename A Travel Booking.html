@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>A Travel Booking</title>
+
+    <!-- Google font -->
+    <link href="css/Font.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type=
+    "text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+
+
+</head>
+
+<body>
+    <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="booking-form">
+                        <form onsubmit="return Validate()" name="myform">
+                            <div class="row no-margin">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <span class="form-label">Destination</span>
+                                        <input class="form-control" type="text" placeholder="Country, ZIP, city..." name="Destination">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row no-margin">
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <span class="form-label">Check In</span>
+                                                <input class="form-control" type="date" name="CheckIn">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <span class="form-label">Check out</span>
+                                                <input class="form-control" type="date" name="Checkout">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <span class="form-label">Guests</span>
+                                                <select class="form-control" name="guest">
+													<option selected disabled>input number</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+                                                    <option value="3">4</option>
+												</select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-btn">
+                                        <input type="submit" class="submit-btn" value="Check availability">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
